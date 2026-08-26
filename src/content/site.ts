@@ -44,8 +44,9 @@ export const site = {
     phoneDisplay: "+91 7285883168",
     phoneHref: "tel:+917285883168",
     whatsapp: "https://wa.me/917285883168",
-    email: "",
-    instagram: "https://instagram.com/aarambhevents",
+    email: "deeppatel30122003@gmail.com",
+    instagram: "https://instagram.com/aarambh_events_and_production",
+    instagramHandle: "@aarambh_events_and_production",
     location: "Serving celebrations across India",
   },
 };
