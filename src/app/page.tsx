@@ -10,13 +10,13 @@ import { ServiceCard } from "@/components/service-card";
 import { Stats } from "@/components/stats";
 import { eventCategories, instagramImages, portfolioItems, processSteps, reasons, services, site, stats } from "@/content/site";
 
-const heroImage = "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2200&q=90";
+const heroImage = "https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=2200&q=90";
 
 export default function Home() {
   return (
     <>
       <section className="home-hero">
-        <Image src={heroImage} alt="Elegant wedding celebration with warm lighting" fill priority sizes="100vw" className="home-hero-image" />
+        <Image src={heroImage} alt="Indian wedding ceremony with warm floral lighting" fill priority sizes="100vw" className="home-hero-image" />
         <div className="home-hero-overlay" />
         <div className="hero-particles" aria-hidden="true"><i /><i /><i /><i /><i /></div>
         <div className="shell hero-content">

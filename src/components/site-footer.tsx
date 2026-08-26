@@ -26,6 +26,7 @@ export function SiteFooter() {
             </span>
           </Link>
           <p>{site.tagline}</p>
+          <span className="footer-note">Founded by {site.owners}</span>
           <span className="footer-note">A premium event planning, production and décor studio.</span>
         </div>
 

@@ -27,6 +27,7 @@ export function ContactDetails() {
   <span><small>Instagram</small>{site.contact.instagramHandle}</span>
 </a>
       <span><MapPin size={18} /><span><small>Location</small>{site.contact.location}</span></span>
+      <span><span><small>Founders</small>{site.owners}</span></span>
     </div>
   );
 }

@@ -13,7 +13,7 @@ export function EventGrid({ items, limit }: { items: EventCardItem[]; limit?: nu
     <div className="event-grid">
       {displayedItems.map((item, index) => (
         <Link className="event-card" href="/contact" key={`${item.title}-${index}`}>
-          <Image src={item.image} alt={`${item.title} event setup placeholder`} fill sizes="(max-width: 680px) 86vw, (max-width: 1024px) 44vw, 25vw" />
+          <Image src={item.image} alt={`${item.title} Indian wedding event setup`} fill sizes="(max-width: 680px) 86vw, (max-width: 1024px) 44vw, 25vw" />
           <span className="event-card-overlay" />
           <span className="event-card-content">
             <strong>{item.title}</strong>
