@@ -40,8 +40,8 @@ h1 em, h2 em { color: var(--gold-light); font-style: italic; }
 h2 { max-width: 740px; margin-bottom: 22px; font-size: clamp(2.5rem, 4.5vw, 4.55rem); }
 h3 { margin-bottom: 10px; font-family: var(--serif); font-size: 1.5rem; font-weight: 400; line-height: 1.15; }
 
-.button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 49px; padding: 0 21px; border: 1px solid var(--gold); background: var(--gold); color: var(--ink); font-size: 0.73rem; font-weight: 750; letter-spacing: 0.075em; text-transform: uppercase; transition: transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease; }
-.button:hover { transform: translateY(-2px); background: var(--gold-light); border-color: var(--gold-light); }
+.button { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 49px; padding: 0 21px; border: 1px solid var(--gold); background: var(--gold); color: var(--ink); font-size: 0.73rem; font-weight: 750; letter-spacing: 0.075em; text-transform: uppercase; transition: transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.button:hover { transform: translateY(-3px); background: var(--gold-light); border-color: var(--gold-light); box-shadow: 0 12px 25px rgba(231, 194, 125, .18); }
 .button-small { min-height: 38px; padding: 0 15px; font-size: .64rem; }
 .button-ghost { border-color: rgba(231, 194, 125, .55); background: transparent; color: var(--paper); }
 .button-ghost:hover { border-color: var(--gold); background: var(--gold); color: var(--ink); }
@@ -103,9 +103,12 @@ h3 { margin-bottom: 10px; font-family: var(--serif); font-size: 1.5rem; font-wei
 
 /* Cards */
 .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
-.service-card { display: flex; min-height: 405px; flex-direction: column; padding: 30px; border: 1px solid var(--line); background: rgba(255, 255, 255, .018); transition: transform .25s ease, border-color .25s ease, background .25s ease; }
+.service-card { position: relative; display: flex; min-height: 405px; flex-direction: column; padding: 30px; border: 1px solid var(--line); background: rgba(255, 255, 255, .018); overflow: hidden; transition: transform .35s cubic-bezier(.2,.65,.2,1), border-color .25s ease, background .25s ease, box-shadow .35s ease; }
+.service-card::after { position: absolute; top: 0; left: -120%; width: 65%; height: 100%; content: ""; background: linear-gradient(100deg, transparent, rgba(231, 194, 125, .09), transparent); transform: skewX(-18deg); transition: left .65s ease; }
 .service-card:hover { border-color: rgba(231, 194, 125, .55); background: rgba(231, 194, 125, .045); transform: translateY(-5px); }
-.service-icon { display: grid; width: 44px; height: 44px; place-items: center; margin-bottom: 40px; border: 1px solid rgba(231, 194, 125, .45); color: var(--gold-light); }
+.service-card:hover::after { left: 145%; }
+.service-icon { display: grid; width: 44px; height: 44px; place-items: center; margin-bottom: 40px; border: 1px solid rgba(231, 194, 125, .45); color: var(--gold-light); transition: transform .35s ease, background .35s ease, color .35s ease; }
+.service-card:hover .service-icon { background: var(--gold-light); color: var(--ink); transform: rotate(-8deg) scale(1.08); }
 .service-card h3 { color: var(--paper); }
 .service-card p { min-height: 64px; margin-bottom: 21px; color: #bdb4a8; font-size: .9rem; line-height: 1.65; }
 .service-card ul { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 27px; padding: 0; list-style: none; }
@@ -116,7 +119,8 @@ h3 { margin-bottom: 10px; font-family: var(--serif); font-size: 1.5rem; font-wei
 /* Events */
 .events-preview { background: #181613; }
 .event-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; }
-.event-card { position: relative; min-height: 245px; overflow: hidden; background: #29231e; }
+.event-card { position: relative; min-height: 245px; overflow: hidden; background: #29231e; transition: transform .35s cubic-bezier(.2,.65,.2,1), box-shadow .35s ease; }
+.event-card:hover { box-shadow: 0 18px 35px rgba(0, 0, 0, .24); transform: translateY(-6px); }
 .event-card img { object-fit: cover; transition: transform .6s cubic-bezier(.2,.65,.2,1); }
 .event-card:hover img { transform: scale(1.08); }
 .event-card-overlay { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(8, 7, 6, .85), rgba(8, 7, 6, .08) 70%); transition: background .3s ease; }
@@ -129,7 +133,8 @@ h3 { margin-bottom: 10px; font-family: var(--serif); font-size: 1.5rem; font-wei
 /* Portfolio */
 .portfolio-preview { background: #100f0d; }
 .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.project-card { position: relative; min-height: 370px; overflow: hidden; background: var(--charcoal-soft); }
+.project-card { position: relative; min-height: 370px; overflow: hidden; background: var(--charcoal-soft); transition: transform .35s cubic-bezier(.2,.65,.2,1), box-shadow .35s ease; }
+.project-card:hover { box-shadow: 0 20px 40px rgba(0, 0, 0, .3); transform: translateY(-5px); }
 .project-card-large { grid-row: span 2; min-height: 754px; }
 .project-card button { width: 100%; height: 100%; padding: 0; border: 0; background: none; color: inherit; text-align: left; }
 .project-card img { object-fit: cover; transition: transform .75s cubic-bezier(.2,.65,.2,1); }
@@ -190,7 +195,8 @@ h3 { margin-bottom: 10px; font-family: var(--serif); font-size: 1.5rem; font-wei
 .instagram-section { background: #181613; }
 .instagram-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 50px; }
 .instagram-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
-.instagram-grid a { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--charcoal-soft); }
+.instagram-grid a { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--charcoal-soft); transition: transform .35s ease, box-shadow .35s ease; }
+.instagram-grid a:hover { box-shadow: 0 14px 28px rgba(0, 0, 0, .25); transform: translateY(-4px); }
 .instagram-grid img { object-fit: cover; transition: transform .45s ease, filter .3s ease; }
 .instagram-grid a:hover img { filter: brightness(.75); transform: scale(1.07); }
 .contact-cta { padding: 86px 0; background: linear-gradient(108deg, #312719 0%, #b18d4f 47%, #e0b86b 100%); color: #17120b; }
