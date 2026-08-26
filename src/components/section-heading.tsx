@@ -6,14 +6,14 @@ export function SectionHeading({
   copy,
   align = "left",
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   copy?: string;
   align?: "left" | "center";
 }) {
   return (
     <Reveal className={`section-heading ${align === "center" ? "section-heading-center" : ""}`}>
-      <p className="eyebrow">{eyebrow}</p>
+      {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
       <h2>{title}</h2>
       {copy ? <p className="section-copy">{copy}</p> : null}
     </Reveal>

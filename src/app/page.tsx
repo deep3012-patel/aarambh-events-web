@@ -21,9 +21,9 @@ export default function Home() {
         <div className="hero-particles" aria-hidden="true"><i /><i /><i /><i /><i /></div>
         <div className="shell hero-content">
           <Reveal>
-            <p className="eyebrow">Aarambh Events &amp; Production</p>
+            <p className="eyebrow">Gujarati celebrations, beautifully produced</p>
             <h1>We Create.<br /><em>You Celebrate.</em></h1>
-            <p>Aarambh Events &amp; Production brings together event planning, creative decoration, production and flawless execution to create memorable experiences.</p>
+            <p>Aarambh Events &amp; Production brings Gujarati warmth, vibrant decoration, garba energy and flawless execution to every celebration.</p>
             <div className="hero-actions">
               <Link className="button" href="/portfolio">Explore Our Work <ArrowRight size={17} /></Link>
               <Link className="button button-ghost" href="/contact">Get In Touch <ArrowUpRight size={17} /></Link>
@@ -48,12 +48,12 @@ export default function Home() {
       </div></section>
 
       <section className="section-pad events-preview"><div className="shell">
-        <div className="section-heading-row"><SectionHeading eyebrow="Events we cover" title="Every kind of celebration." copy="From personal milestones to large-scale productions, each event begins with a clear point of view." /><Link className="text-link desktop-only" href="/events">Explore all events <ArrowRight size={16} /></Link></div>
+        <div className="section-heading-row"><SectionHeading title="Every celebration, our way." copy="From wedding rituals and garba nights to birthdays and family milestones, we bring colour, culture and care to the occasion." /><Link className="text-link desktop-only" href="/events">Explore all events <ArrowRight size={16} /></Link></div>
         <Reveal><EventGrid items={eventCategories} limit={8} /></Reveal>
       </div></section>
 
       <section className="section-pad portfolio-preview"><div className="shell">
-        <div className="section-heading-row"><SectionHeading eyebrow="Selected work" title="Made to be remembered." copy="A glimpse of the visual worlds, stages and celebrations we can create." /><Link className="text-link desktop-only" href="/portfolio">View portfolio <ArrowRight size={16} /></Link></div>
+        <div className="section-heading-row"><SectionHeading title="Made to be remembered." copy="A glimpse of the visual worlds, stages and celebrations we can create." /><Link className="text-link desktop-only" href="/portfolio">View portfolio <ArrowRight size={16} /></Link></div>
         <PortfolioGrid items={portfolioItems} featuredOnly />
       </div></section>
 
