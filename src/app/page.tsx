@@ -17,6 +17,7 @@ export default function Home() {
     <>
       <section className="home-hero">
         <Image src={heroImage} alt="Indian wedding ceremony with warm floral lighting" fill priority sizes="100vw" className="home-hero-image" />
+          <Image src={heroImage} alt="Gujarati wedding ceremony with warm floral lighting" fill priority sizes="100vw" className="home-hero-image" />
         <div className="home-hero-overlay" />
         <div className="hero-particles" aria-hidden="true"><i /><i /><i /><i /><i /></div>
         <div className="shell hero-content">

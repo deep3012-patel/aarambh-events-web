@@ -116,12 +116,12 @@ export const services = [
 ];
 
 export const eventCategories = [
-  { title: "Wedding", description: "A complete celebration, from the first welcome to the final farewell.", image: image("photo-1606800052052-a08af7148866") },
-  { title: "Engagement", description: "An elegant start, made distinctly personal.", image: image("photo-1591604466107-ec97de577aff") },
-  { title: "Reception", description: "A composed evening of warmth, music and celebration.", image: image("photo-1583939003579-730e3918a45a") },
-  { title: "Haldi", description: "Bright, joyful colour and a sunlit celebratory mood.", image: image("photo-1519741497674-611481863552") },
-  { title: "Mehndi", description: "Intimate artistry, fresh florals and festive detail.", image: image("photo-1511285560929-80b456fea0bc") },
-  { title: "Sangeet", description: "High-energy moments brought together with production flair.", image: image("photo-1544078751-58fee2d8a03b") },
+  { title: "Gujarati Wedding", description: "A complete celebration with mandap rituals, family blessings and a warm Gujarati welcome.", image: image("photo-1606800052052-a08af7148866") },
+  { title: "Engagement", description: "An elegant ring ceremony designed with personal Gujarati traditions and family joy.", image: image("photo-1591604466107-ec97de577aff") },
+  { title: "Reception", description: "A composed evening of Gujarati hospitality, music, colour and celebration.", image: image("photo-1583939003579-730e3918a45a") },
+  { title: "Haldi & Pithi", description: "Bright yellow colour, marigolds and joyful pithi moments shared with family.", image: image("photo-1519741497674-611481863552") },
+  { title: "Mehndi", description: "Intimate artistry, fresh florals and festive detail before the big celebration.", image: image("photo-1511285560929-80b456fea0bc") },
+  { title: "Garba & Sangeet", description: "High-energy garba, music and dance brought together with production flair.", image: image("photo-1544078751-58fee2d8a03b") },
   { title: "Birthday", description: "Milestones made imaginative, effortless and memorable.", image: image("photo-1532712938310-34d8b3f6c5f2") },
   { title: "Baby Shower", description: "Soft, thoughtful settings for a very special welcome.", image: image("photo-1513159446162-54eb8bdaa79b") },
   { title: "Anniversary", description: "A considered toast to the journey so far.", image: image("photo-1519225421980-715cb0215aed") },
@@ -136,12 +136,12 @@ export const eventCategories = [
 ];
 
 export const portfolioItems: PortfolioItem[] = [
-  { id: "royal-ceremony", category: "Weddings", title: "The Royal Ceremony", description: "A gold-lit mandap layered with fresh floral detail.", image: image("photo-1606800052052-a08af7148866"), alt: "Indian wedding ceremony with warm floral decoration", featured: true },
-  { id: "garden-vows", category: "Weddings", title: "Garden Vows", description: "A soft outdoor setting shaped around the couple’s story.", image: image("photo-1591604466107-ec97de577aff"), alt: "Indian bride and groom celebrating outdoors" },
-  { id: "floral-hall", category: "Decoration", title: "Floral Hall", description: "Fresh florals, warm light and an inviting guest journey.", image: image("photo-1583939003579-730e3918a45a"), alt: "Indian wedding venue with floral decoration" },
-  { id: "saffron-celebration", category: "Decoration", title: "Saffron Celebration", description: "A vibrant palette with refined textural layers.", image: image("photo-1519741497674-611481863552"), alt: "Bright Indian wedding celebration decor" },
-  { id: "after-dark", category: "Stage & Production", title: "After Dark", description: "An atmospheric stage designed for sound, scale and energy.", image: image("photo-1544078751-58fee2d8a03b"), alt: "Indian wedding sangeet stage with lighting", featured: true },
-  { id: "immersive-stage", category: "Stage & Production", title: "Immersive Stage", description: "A crisp production environment built for the moment.", image: image("photo-1511285560929-80b456fea0bc"), alt: "Decorated Indian wedding stage" },
+  { id: "royal-ceremony", category: "Weddings", title: "The Gujarati Mandap", description: "A gold-lit mandap layered with fresh floral detail and traditional warmth.", image: image("photo-1606800052052-a08af7148866"), alt: "Gujarati style Indian wedding ceremony with warm floral decoration", featured: true },
+  { id: "garden-vows", category: "Weddings", title: "Family Vows", description: "A soft setting shaped around the couple’s story and Gujarati family traditions.", image: image("photo-1591604466107-ec97de577aff"), alt: "Indian bride and groom celebrating with family" },
+  { id: "floral-hall", category: "Decoration", title: "Marigold Mandap", description: "Fresh marigolds, warm light and an inviting Gujarati wedding guest journey.", image: image("photo-1583939003579-730e3918a45a"), alt: "Gujarati wedding venue with floral mandap decoration" },
+  { id: "saffron-celebration", category: "Decoration", title: "Pithi Palette", description: "A vibrant saffron and yellow palette with refined festive layers.", image: image("photo-1519741497674-611481863552"), alt: "Bright Gujarati wedding celebration decor" },
+  { id: "after-dark", category: "Stage & Production", title: "Garba After Dark", description: "An atmospheric stage designed for garba, sangeet and Gujarati celebration energy.", image: image("photo-1544078751-58fee2d8a03b"), alt: "Gujarati wedding garba and sangeet stage with lighting", featured: true },
+  { id: "immersive-stage", category: "Stage & Production", title: "Sangeet Stage", description: "A crisp production environment built for music, dance and family performances.", image: image("photo-1511285560929-80b456fea0bc"), alt: "Decorated Gujarati wedding sangeet stage" },
   { id: "brand-gathering", category: "Corporate", title: "Brand Gathering", description: "A clean corporate environment with a considered guest flow.", image: image("photo-1519167758481-83f550bb49b3"), alt: "Indian celebration guests in a decorated venue", featured: true },
   { id: "conference-frame", category: "Corporate", title: "Conference Frame", description: "Professional production for ideas that need the right stage.", image: image("photo-1492684223066-81342ee5ff30"), alt: "Indian event stage and audience" },
   { id: "milestone-night", category: "Celebrations", title: "Milestone Night", description: "A private celebration with mood, music and detail.", image: image("photo-1532712938310-34d8b3f6c5f2"), alt: "Colourful Indian wedding celebration" },
