@@ -10,13 +10,13 @@ import { ServiceCard } from "@/components/service-card";
 import { Stats } from "@/components/stats";
 import { eventCategories, instagramImages, portfolioItems, processSteps, reasons, services, site, stats } from "@/content/site";
 
-const heroImage = "https://i.pinimg.com/originals/38/84/4b/38844b33e7987c025b09e239c884eff8.jpg";
+const heroImage = "https://i.pinimg.com/736x/cf/8e/dd/cf8edded6cc3cfe4bdbcb451d072fe13.jpg";
 
 export default function Home() {
   return (
     <>
       <section className="home-hero">
-        <Image src={heroImage} alt="Gujarati wedding ceremony with warm floral lighting" fill priority sizes="100vw" className="home-hero-image" />
+        <Image src={heroImage} alt="Colourful Gujarati mehndi celebration stage with floral decor" fill priority sizes="100vw" className="home-hero-image" />
         <div className="home-hero-overlay" />
         <div className="hero-particles" aria-hidden="true"><i /><i /><i /><i /><i /></div>
         <div className="shell hero-content">
@@ -72,6 +72,7 @@ export default function Home() {
       </div></section>
 
       <section className="contact-cta"><div className="shell contact-cta-grid"><div><p className="eyebrow">Let&apos;s begin</p><h2>Have an occasion in mind?</h2><p>Bring us the possibility. We&apos;ll help shape the experience.</p></div><div className="cta-actions"><Link className="button" href="/contact">Send an Enquiry <ArrowRight size={17} /></Link><a className="text-link" href={site.contact.whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={17} /> WhatsApp us</a></div></div></section>
+      <a className="floating-whatsapp" href={site.contact.whatsapp} target="_blank" rel="noreferrer" aria-label="Chat with Aarambh on WhatsApp"><MessageCircle size={21} /><span>Chat with us</span></a>
     </>
   );
 }
